@@ -1,5 +1,6 @@
 # js-canvas-effects
 
+<a href="https://tim-min.github.io/js-canvas-effects/">Example</a>
 
 <h3>Get started</h3>
 
