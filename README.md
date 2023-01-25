@@ -47,6 +47,6 @@
 lines("effects_div", 500, 500, 30, 'black', 'gray', 'white', 3);
 
 // Arguments:
-// lines(div_id, canvas_width, canvas_height, particles_count, background_color='black', particles_color='gray', lines_color='white', particles_size=3);
+// lines(div_id, canvas_width, canvas_height, particles_count, bg_color='black', particles_color='gray', lines_color='white', particles_size=3);
 
 ```
