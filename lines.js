@@ -19,7 +19,7 @@ class Dot {
     }
 }
 
-class Effect {
+class LinesEffect {
     constructor(cvs_el, context, wwidth, wheight, bg_color, particles_color, lines_color, particles_size) {
         this.cvs = document.querySelector(cvs_el);
         this.ctx = this.cvs.getContext(context);
@@ -73,7 +73,7 @@ class Effect {
 
 function lines(canvas_div, canvas_width, canvas_height, particles_count, bg_color='black', particles_color='white', lines_color='white', particles_size=3) {
     document.getElementById(canvas_div).innerHTML = `<canvas id='TmminLinesCanvas' width='${canvas_width}' height='${canvas_height}'></canvas>`;
-    let effect = new Effect('#TmminLinesCanvas', '2d', canvas_width, canvas_height, bg_color, particles_color, lines_color, particles_size);
+    let effect = new LinesEffect('#TmminLinesCanvas', '2d', canvas_width, canvas_height, bg_color, particles_color, lines_color, particles_size);
     effect.generate_dots(particles_count, canvas_width, canvas_height);
 
     $("body").mousemove(function (e) {

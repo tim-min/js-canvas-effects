@@ -4,15 +4,18 @@
     <head>
         <title>Example</title>
         <script src="circles.js"></script>
+        <script src="lines.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <div id="effects_div" align="center"></div>
+        <div id="circles_div" style="padding-right: 10px; display: inline-block;"></div>
+        <div id="lines_div" style="padding-right: 10px; display: inline-block;"></div>
 
         <script>
-            circles("effects_div", 500, 500, 8, 'black', ['white', 'gray'], 50, 0.1);
+            lines("lines_div", 500, 500, 30);
+            circles("circles_div", 500, 500, 8, 'black', ['white', 'gray'], 50, 0.1);
         </script>
     </body>
 

@@ -28,7 +28,7 @@ class Circle {
 }
 
 
-class Effect {
+class CirclesEffect {
     constructor(canvas, ctx, width, height, bg_color, particles_colors, particles_size, particles_count, particles_speed) {
         this.cvs = document.querySelector(canvas);
         this.ctx = this.cvs.getContext(ctx);
@@ -76,7 +76,7 @@ class Effect {
 function circles(canvas_div, canvas_width, canvas_height, particles_count, bg_color = "white", particles_colors = ["yellow", "red", "blue", "purple", "green"], particles_size = 100, particles_speed = 1) {
 
     document.getElementById(canvas_div).innerHTML = `<canvas id='TmminCirclesCanvas' width='${canvas_width}' height='${canvas_height}'></canvas>`;
-    let effect = new Effect('#TmminCirclesCanvas', '2d', canvas_width, canvas_height, bg_color, particles_colors, particles_size, particles_count, particles_speed);
+    let effect = new CirclesEffect('#TmminCirclesCanvas', '2d', canvas_width, canvas_height, bg_color, particles_colors, particles_size, particles_count, particles_speed);
 
     setInterval(function () {
         effect.loop();
