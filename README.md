@@ -50,3 +50,16 @@ lines("effects_div", 500, 500, 30, 'black', 'gray', 'white', 3);
 // lines(div_id, canvas_width, canvas_height, particles_count, bg_color='black', particles_color='gray', lines_color='white', particles_size=3);
 
 ```
+
+<br>
+
+<li>Circles Effect:</li><br>
+
+```javascript
+
+circles("effects_div", 500, 500, 30, 'black', ['white', 'gray'], 100, 0.1);
+
+// Arguments:
+// circles(div_id, canvas_width, canvas_height, particles_count, bg_color='black', particles_colors=["yellow", "red", "blue", "purple", "green"], particles_size=100, particles_speed=1);
+
+```
